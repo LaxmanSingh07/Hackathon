@@ -1,0 +1,282 @@
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel = "stylesheet" name = "text/css" href = "includes/styledup.css">
+<link rel="stylesheet" href="includes/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<script src="includes/js/jquery.js"> </script>
+
+<title> My website </title>
+
+<style>
+
+.score th{
+    border-left: 1px solid #ddd;
+	text-align:center;
+	padding:3px;
+}
+
+.result th:hover{
+    text-decoration:underline;
+}
+.team{
+    font-family:Georgia;
+	 letter-spacing:.5px;
+	 word-spacing:0.3px;
+}
+.team th:hover{
+    color:blue;
+	font-style:italic;
+}
+.heading h6{
+    text-align:center;
+	color:gray;
+	margin-top:30px;
+	margin-bottom:20px;
+}
+.heading h6:hover{
+    color:darkred;
+}
+.heading {
+    text-align:center;
+	}
+.heading h2{
+    text-align:center;
+	margin-top:20px;
+	}
+.heading h2:hover{
+    color:red;
+}	
+	
+</style>
+
+</head>
+
+<body >
+<script src="js/project.js"></script>
+<script src="js/jquery.js"></script>
+
+<!-- HEADER STARTS--> 
+<div class = "container-fluid">
+<div class = "row" style = "margin-bottom:2px;">
+<img src = "images/south africa.png" style = "width:133px; height:60px;">
+<img src = "images/newzealand.png" style = "width:133px; height:60px;">
+<img src = "images/england.png" style = "width:133px; height:60px;">
+<img src = "images/india.jpg" style = "width:133px; height:60px;">
+<h1 style = "font-size:34px; font-style:oblique; margin-left:22px; margin-right:22px; margin-top:5px;"> 
+<a href = "file:///C:/Users/Dell/Desktop/FHCJ/page1.htm" style = " text-decoration:none;">
+<b><span style = "color:purple;">W</span><span style="font-family:Book Antiqua;color:RebeccaPurple;">oRld</span><span style = "color:purple;">C</span><span style="font-family:Book Antiqua;color:RebeccaPurple;">ricInFo</span></a> </h1> 
+</b>
+<img src = "images/westindies.jpg" style = "width:133px; height:60px;">
+<img src = "images/bangladesh.jpg" style = "width:133px; height:60px;">
+<img src = "images/srilanka.jpg" style = "width:133px; height:60px;">
+<img src = "images/australia.png" style = "width:133px; height:60px;">
+
+
+
+<!--HEADER ENDS-->
+
+<div class = "score" >
+<table style = " width:126%; background-color:#F8F8F8;">
+<tr class = "team"> <th> India: 260/3(50 overs)</th> <th> Australia: 200/5(20 overs)</th> <th> NewZealand: 320/7(50 overs)  </th> <th> Ireland: 140/6(20 overs)</th> </tr>
+<tr class = "team"> <th> Bangladesh: 185-allout(39.5 overs)</th> <th> SouthAfrica: 166/9(20 overs) </th> <th> England: 320/9(50 overs)</th> <th> Nepal: 141/9(19.5 overs)</th> </tr>
+<tr style="color:red; font-family: Trebuchet MS" class = "result"> <th>ODI: India won by 85 runs </th> <th>T-20: Australia won by 34 runs </th> <th>ODI: Match Drawn </th>
+ <th>T-20: Nepal won by 1 wicket </th> </tr> 
+</table>
+
+</div>
+</div>
+</div>
+<!--NAVBAR STARTS-->
+<div class = "topnav" id = "myTopnav">
+    <a href="page1.htm"><i class="fa fa-home" style="font-size:30px;
+					color:#ffffff;margin-top:-3px;margin-left:8px"></i></a>
+     <a href = "live.htm" id = "score"> Live Scores </a> 
+	 <a href = "page2.htm" target = "_blank"> Rankings </a>
+	 <a href = "schedules.htm" target = "_blank">Schedule </a>
+	 <a href = "page4.htm" target = "_blank">Teams </a>
+	 <div class="dropdown">
+      <button class="dropbtn">Series
+      <i class="fa fa-caret-down"></i>
+    </button>
+    </div>   
+	<a href = "aboutus.htm" style = "float:right;">AboutUs </a>
+	
+	<a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+
+</div>
+
+<script>
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+	
+}
+</script>
+<!--NAVBAR ENDS-->
+ 
+<!-- MAIN AREA -->
+<div  class="container-fluid">
+<div class="row">
+
+  <div class = "col-md-2">
+  <!-- LEFT SIDEBAR STARTS-->
+  <!--<div class = "leftsidebar">-->
+    <h4 style = "color:RebeccaPurple;">  
+        <center><b><br> KEY SERIES <br></b></center>
+    </h4>
+   <table class="keyseries">
+    <tr> <th> ICC WCQ </th> </tr>
+    <tr> <th>INDIA Vs ENGLAND </th> </tr>
+    <tr> <th> IPL </th> </tr>
+    <tr> <th> Women's Tri-Series </th> </tr>
+    <tr> <th> AUSTRALIA Vs SOUTH AFRICA </th> </tr>
+    <tr> <th> ICC WWC </th> </tr>
+    <tr> <th> PSL </th> </tr>
+	<tr> <th> BIG BASH </th> </tr>
+   </table>
+   <h4 style = "color:RebeccaPurple;">  
+        <center><b><br> KEY TOURNAMENTS <br></b></center>
+    </h4>
+   <table class="keyseries">
+    <tr> <th> ICC WORLDCUP </th> </tr>
+    <tr> <th> ICC T-20 WORLDCUP </th> </tr>
+    <tr> <th> ICC CHAMPIONS LEAGUE</th> </tr>
+    <tr> <th> ICC WOMEN'S WORLDCUP </th> </tr>
+    <tr> <th> ICC TEST CHAMPIONSHIP</th> </tr>
+    <tr> <th> ICC U-19 WORLDCUP </th> </tr>
+   </table>
+  </div> 
+  <!--LEFT SIDEBAR ENDS-->
+ 
+  <!--MIDDLE STARTS-->	  
+    <div class = "col-md-7 heading" >
+	    
+	    <h6> MUMBAI INDIANS VS SUNRISERS HYDERABAD</h6>
+	    <img src = "images/main3.jpg" onmousemove = "bigimg(this)" onmouseout = "nrmlimg(this)">
+	    <h2> Mumbai loses 3 early wickets </h2> <br>
+		
+	    <h6> ENGLAND VS NEWZEALAND,1ST TEST </h6>
+	    <img src = "images/main2.jpg" onmousemove = "bigimg(this)" onmouseout = "nrmlimg(this)">
+	    <h2> England towards a big lead <h1> <br>
+		
+		<h6> AUSTRALIA VS SOUTHAFRICA,2ND TEST </h6>
+	    <img src = "images/main1.jpg" onmousemove = "bigimg(this)" onmouseout = "nrmlimg(this)">
+	    <h2> Cummins powers Australia's turnaround <h1>
+
+    </div>
+	<script>
+	     function bigimg(x)
+		 {
+		     x.style.height = "335px";
+			 x.style.width = "530px";
+		}
+		 function nrmlimg(x)
+		 {
+		     x.style.height = "235px";
+			 x.style.width = "460px";
+		 }
+	</script>
+	<!--MIDDLE ENDS-->
+	
+  <!--RIGHT SIDEBAR STARTS-->
+  <div class = "col-md-3" style = "background-color:#F5F5F5;">
+    <h4 style = "color:RebeccaPurple; padding: 5px;">  
+        <center><b><br> LATEST NEWS <br></b></center>
+    </h4>
+   <ul class = "news">
+     <li>Here to win IPL, not develop young players - Stephen Fleming</li>
+	 <li>AB de Villiers's sensational 90* off 39 gives RCB their second win this IPL</li>
+     <li>KXIP openers scored 116 in 9.4 overs and helped the team register a nine-wicket win by DLS method</li>
+     <li>England set new ODI batting bar - Smith</li>
+     <li>Fit-again Ngidi scales new high at home</li>
+     <li>Mashrafe Mortaza backs pace-heavy plan</li>
+     <li>Hathurusingha plays it cool on Mirpur return</li>
+     <li>I have to take more responsibility - Ishant</li>
+     <li>Roy pleased to move on from 'tough' 2017</li>
+     <li>Pant hits 32-ball ton, the fastest by an Indian</li>
+     <li>Nagarkoti, Mavi spring a surprise on Australia</li>
+   </ul>
+  </div>
+  <script>
+$(document).ready(function(){
+$(".news").on({
+mouseenter: function(){
+$(this).css("background-color", "#E8E8E8");
+},
+mouseleave: function(){
+$(this).css("background-color", "#F5F5F5");
+}
+
+});
+});
+</script>
+  <!--RIGHT SIDEBAR ENDS-->
+    </div>
+  
+ </div>
+ <!--MAIN AREA ENDS-->
+
+  
+  <!--footer Starts-->
+    
+ <table class = "container-fluid foot">
+  
+ <table class="container-fluid" style="font-family:verdana;color:white">
+ 
+ <tr style="background-color:#22262a"><td colspan="3">
+ <b><h2><span style = "color:white;">W</span><span style="font-family:Book Antiqua;color:white;">oRld</span><span style="color:white;">C</span><span style="font-family:Book Antiqua;color:white;">ricInFo</span></h2> 
+</b></td>
+ <td colspan="1" style="float:right">
+ <i>Follow Us On:</i>
+ <a href="" class="fa fa-facebook" style="color:white;text-decoration:none;font-size:30px;padding:10px"></a>
+ <a href="" class="fa fa-twitter" style="color:white;text-decoration:none;font-size:30px;padding:10px"></a>
+ <a href=""class="fa fa-youtube"style="color:white;text-decoration:none;font-size:30px;padding:10px"></a></td></tr>
+ 
+ </table>
+  <div class="container-fluid end" style="font-family:verdana; background-color:#303030; padding:5px;">
+  <div class="row foo">
+  
+    <div class="col-sm-4">
+	<ul>
+ <h5>About</h5>
+ 
+  <li><a href="aboutus.htm">
+ About Us</a></li>
+ <li><a href="">Faq</a></li>
+ <li><a href="">Contact Us</a></li>
+ </ul>
+ </div>
+ <div class="col-sm-4">
+ <ul>
+ <h5>Mobilesite & Apps </h5>
+
+  <li><a href="">Windows</a></li>
+   <li><a href="">IOS</a></li>
+    <li><a href="">Android</a></li>
+	</ul>
+	</div>
+	
+	<div class="col-sm-4">
+	<ul>
+ <h5>Company</h5>
+ 
+
+ <li><a href="">Careers</a></li>
+ <li><a href="">Advertise</a></li>
+ <li><a href="">Privacy Policy</a></li>
+ </ul>
+ </div>
+ </div>
+ </div>
+ </table>
+ 
+</body>
+</html>

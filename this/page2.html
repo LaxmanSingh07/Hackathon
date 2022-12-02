@@ -1,0 +1,280 @@
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel = "stylesheet" name = "text/css" href = "includes/styledup.css">
+<link rel="stylesheet" href="includes/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<script src="includes/js/jquery.js"> </script>
+
+<title> My website </title>
+
+<style>
+
+
+.team{
+    font-family:Georgia;
+	 letter-spacing:.5px;
+	 word-spacing:0.3px;
+}
+.team th:hover{
+    color:blue;
+	font-style:italic;
+}
+
+.heading table{
+    width:66%;
+    }
+.heading td:hover{
+    background-color:#E8E8E8;
+}	
+.heading table {
+    border-collapse: collapse;
+}
+
+.ranktable th, td {
+    text-align: left;
+    padding: 10px;
+	letter-spacing:.5px;
+}
+.rankbar td{
+    font-family:Georgia;
+	}
+
+.ranktable tr:nth-child(even){background-color: #f2f2f2}
+
+.ranktable th {
+    background-color: RebeccaPurple;
+    color: white;
+	letter-spacing:.5px;
+	font-family:Arial;
+}	
+.button{
+    padding:10px;
+	background-color:#F0F0F0;
+	margin-top:30px;
+	margin-bottom:20px;
+	font-size:17;
+	border-radius: 25px;
+	font-family: Trebuchet MS;
+}
+
+</style>
+
+</head>
+
+<body >
+<script src="js/project.js"></script>
+<script src="js/jquery.js"></script>
+
+<!-- HEADER STARTS--> 
+<div class = "container-fluid">
+<div class = "row" style = "margin-bottom:2px;">
+<img src = "images/south africa.png" style = "width:133px; height:60px;">
+<img src = "images/newzealand.png" style = "width:133px; height:60px;">
+<img src = "images/england.png" style = "width:133px; height:60px;">
+<img src = "images/india.jpg" style = "width:133px; height:60px;">
+<h1 style = "font-size:34px; font-style:oblique; margin-left:22px; margin-right:22px; margin-top:5px;"> 
+<a href = "page1.htm" style = " text-decoration:none;">
+<b><span style = "color:purple;">W</span><span style="font-family:Book Antiqua;color:RebeccaPurple;">oRld</span><span style = "color:purple;">C</span><span style="font-family:Book Antiqua;color:RebeccaPurple;">ricInFo</span></a> </h1> 
+</b>
+<img src = "images/westindies.jpg" style = "width:133px; height:60px;">
+<img src = "images/bangladesh.jpg" style = "width:133px; height:60px;">
+<img src = "images/srilanka.jpg" style = "width:133px; height:60px;">
+<img src = "images/australia.png" style = "width:133px; height:60px;">
+
+
+
+<!--HEADER ENDS-->
+
+</div>
+</div>
+<!--NAVBAR STARTS-->
+<div class = "topnav" id = "myTopnav">
+    <a href="page1.htm"><i class="fa fa-home" style="font-size:30px;
+					color:#ffffff;margin-top:-3px;margin-left:8px"></i></a>
+     <a href = "live.htm" id = "score"> Live Scores </a> 
+	 <a href = "page2.htm" target = "_blank"> Rankings </a>
+	 <a href = "schedules.htm" target = "_blank">Schedule </a>
+	 <a href = "page4.htm" target = "_blank">Teams </a>
+	 <div class="dropdown">
+      <button class="dropbtn">Series
+      <i class="fa fa-caret-down"></i>
+    </button>
+    </div>   
+	<a href = "aboutus.htm" style = "float:right;">AboutUs </a>
+	
+	<a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+
+</div>
+
+<script>
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+	
+}
+</script>
+<!--NAVBAR ENDS-->
+ <h3 style = "margin-left:20px; margin-bottom:15px; margin-top:15px;">ICC PLAYER AND TEAM RANKINGS</h3>
+
+<div class = "matchtype">
+<ul>
+    <li> <a href = "page2.htm"> All Rounder</a> </li>
+	<li> <a href = "page3.htm"> Bowler </a> </li>
+	<li> <a href = "page2.htm" class = "active"> Batsman </a> </li>
+	<li> <a href = "page4.htm"> Teams </a> </li>
+</ul>
+</div>
+
+<!-- MAIN AREA -->
+<div  class="container-fluid">
+<div class="row">
+
+  <div class = "col-md-2">
+  <!-- LEFT SIDEBAR STARTS-->
+  <!--<div class = "leftsidebar">-->
+    <h4 style = "color:RebeccaPurple;">  
+        <center><b><br> KEY SERIES <br></b></center>
+    </h4>
+   <table class="keyseries">
+    <tr> <th> ICC WCQ </th> </tr>
+    <tr> <th>INDIA Vs ENGLAND </th> </tr>
+    <tr> <th> IPL </th> </tr>
+    <tr> <th> Women's Tri-Series </th> </tr>
+    <tr> <th> AUSTRALIA Vs SOUTH AFRICA </th> </tr>
+    <tr> <th> ICC WWC </th> </tr>
+    <tr> <th> PSL </th> </tr>
+	<tr> <th> BIG BASH </th> </tr>
+   </table>
+   <h4 style = "color:RebeccaPurple;">  
+        <center><b><br> KEY TOURNAMENTS <br></b></center>
+    </h4>
+   <table class="keyseries">
+    <tr> <th> ICC WORLDCUP </th> </tr>
+    <tr> <th> ICC T-20 WORLDCUP </th> </tr>
+    <tr> <th> ICC CHAMPIONS LEAGUE</th> </tr>
+    <tr> <th> ICC WOMEN'S WORLDCUP </th> </tr>
+    <tr> <th> ICC TEST CHAMPIONSHIP</th> </tr>
+    <tr> <th> ICC U-19 WORLDCUP </th> </tr>
+   </table>
+  </div> 
+  <!--LEFT SIDEBAR ENDS-->
+ 
+  <!--MIDDLE STARTS-->	  
+    <div class = "col-md-10 heading" >
+	 <center><button class = "button"> Tests </button>
+    <table class= "ranktable"> <strong> <tr> <th> Ranking </th> <th> Name </th> <th> Country </th> </tr> </strong>
+    <tr><td>1</td> <td>Steven Smith     </td> <td> AUSTRALIA </td></tr> 
+    <tr><td>2</td> <td>Joe Root         </td> <td>ENGLAND </td></tr>
+    <tr><td>3</td> <td>Virat Kohli      </td> <td>INDIA </td></tr>
+    <tr><td>4</td> <td>Kane Williamson  </td> <td>NEW ZEALAND</td></tr>
+    <tr><td>5</td> <td>Cheteshwar Pujara</td> <td>INDIA </td></tr>
+    <tr><td>6</td> <td>David Warner     </td> <td>AUSTRALIA</td></tr>
+    <tr><td>7</td> <td>Azhar Ali        </td> <td>PAKISTAN</td></tr>
+    <tr><td>8</td> <td>Dinesh Chandimal </td> <td>SRI LANKA </td></tr>
+    <tr><td>9</td> <td>Alastair Cook    </td> <td>ENGLAND</td></tr>
+    <tr><td>10</td><td>Hashim Amla      </td> <td>SOUTH AFRICA</td></tr>
+   </table>  
+ 
+    <button class = "button"> ODI </button>
+   <table class= "ranktable"> <strong> <tr> <th> Ranking </th> <th> Name </th> <th> Country </th> </tr> </strong>
+    <tr><td>1</td> <td> Virat Kohli    </td> <td> INDIA </td></tr>
+    <tr><td>2</td> <td> AB de Villiers </td> <td> SOUTH AFRICA </td></tr>
+    <tr><td>3</td> <td> David Warner   </td> <td> AUSTRALIA </td></tr>
+    <tr><td>4</td> <td> Babar Azam     </td> <td> PAKISTAN </td></tr>
+    <tr><td>5</td> <td> Rohit Sharma   </td> <td> INDIA </td></tr>
+    <tr><td>6</td> <td> Quinton de Kock</td> <td> SOUTH AFRICA </td></tr>
+    <tr><td>7</td> <td> Joe Root       </td> <td> ENGLAND </td></tr>
+    <tr><td>8</td> <td> Faf du Plessis </td> <td> SOUTH AFRICA</td></tr>
+    <tr><td>9</td> <td> Hashim Amla    </td> <td> SOUTH AFRICA </td></tr>
+    <tr><td>10</td> <td> Kane Williamson</td> <td>NEW ZEALAND </td></tr>
+   </table> 
+   
+   <button class = "button" > T20 </button>
+   <table class= "ranktable"> <strong> <tr> <th> Ranking </th> <th> Name </th> <th> Country </th> </tr> </strong>
+    <tr><td>1</td> <td>Colin Munro   </td> <td> NEW ZEALAND </td></tr>
+    <tr><td>2</td> <td>Aaron Finch   </td> <td> AUSTRALIA </td></tr>
+    <tr><td>3</td> <td>Virat Kohli   </td> <td> INDIA </td></tr>
+    <tr><td>4</td> <td>Evin Lewis    </td> <td> WINDIES </td></tr>
+    <tr><td>5</td> <td>Lokesh Rahul  </td> <td> INDIA </td></tr>
+    <tr><td>6</td> <td>Glenn Maxwell </td> <td> AUSTRALIA </td></tr>
+    <tr><td>7</td> <td>Kane Williamson</td> <td>NEW ZEALAND </td></tr>
+    <tr><td>8</td> <td>Alex Hales    </td> <td> ENGLAND </td></tr>
+    <tr><td>9</td> <td>Joe Root      </td> <td> ENGLAND </td></tr>
+    <tr><td>10</td> <td>Hashim Amla   </td> <td> SOUTH AFRICA </td></tr>
+   </table> </center>
+    </div>
+	
+	<!--MIDDLE ENDS-->
+	
+  <!--RIGHT SIDEBAR STARTS
+  
+  <!--RIGHT SIDEBAR ENDS-->-->
+    </div>
+  
+ </div>
+ <!--MAIN AREA ENDS-->
+
+  
+  <!--footer Starts-->
+    
+ <table class = "container-fluid foot">
+  
+ <table class="container-fluid" style="font-family:verdana;color:white">
+ 
+ <tr style="background-color:#22262a"><td colspan="3">
+ <b><h2><span style = "color:white;">W</span><span style="font-family:Book Antiqua;color:white;">oRld</span><span style="color:white;">C</span><span style="font-family:Book Antiqua;color:white;">ricInFo</span></h2> 
+</b></td>
+ <td colspan="1" style="float:right">
+ <i>Follow Us On:</i>
+ <a href="" class="fa fa-facebook" style="color:white;text-decoration:none;font-size:30px;padding:10px"></a>
+ <a href="" class="fa fa-twitter" style="color:white;text-decoration:none;font-size:30px;padding:10px"></a>
+ <a href=""class="fa fa-youtube"style="color:white;text-decoration:none;font-size:30px;padding:10px"></a></td></tr>
+ 
+ </table>
+  <div class="container-fluid end" style="font-family:verdana; background-color:#303030; padding:5px;">
+  <div class="row foo">
+  
+    <div class="col-sm-4">
+	<ul>
+ <h5>About</h5>
+ 
+  <li><a href="aboutus.htm">
+ About Us</a></li>
+ <li><a href="">Faq</a></li>
+ <li><a href="">Contact Us</a></li>
+ </ul>
+ </div>
+ <div class="col-sm-4">
+ <ul>
+ <h5>Mobilesite & Apps </h5>
+
+  <li><a href="">Windows</a></li>
+   <li><a href="">IOS</a></li>
+    <li><a href="">Android</a></li>
+	</ul>
+	</div>
+	
+	<div class="col-sm-4">
+	<ul>
+ <h5>Company</h5>
+ 
+
+ <li><a href="">Careers</a></li>
+ <li><a href="">Advertise</a></li>
+ <li><a href="">Privacy Policy</a></li>
+ </ul>
+ </div>
+ </div>
+ </div>
+ </table>
+ 
+</body>
+</html>

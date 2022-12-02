@@ -1,0 +1,253 @@
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel = "stylesheet" name = "text/css" href = "includes/styledup.css">
+<link rel="stylesheet" href="includes/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<script src="includes/js/jquery.js"> </script>
+
+<title> Schedules </title>
+
+<style>
+
+
+.heading table{
+    width:66%;
+    }
+.heading td:hover{
+    background-color:#E8E8E8;
+}	
+.heading table {
+    border-collapse: collapse;
+}
+
+.sch td {
+    letter-spacing:1.5px;
+	word-spacing:1.2px;
+	padding: 20px;
+}
+.sch th{
+    padding:15px;
+}
+.tour td{
+     font-family:Georgia;
+}
+.sch{
+    text-align:center;
+	}
+
+.sch tr:nth-child(even){background-color: #f2f2f2}
+
+.sch th {
+    background-color: RebeccaPurple;
+    color: white;
+	letter-spacing:.5px;
+	font-family:Arial;
+}
+
+.button{
+    padding:10px;
+	background-color:#F0F0F0;
+	margin-top:30px;
+	margin-bottom:20px;
+	font-size:17;
+	border-radius: 25px;
+	font-family: Trebuchet MS;
+}
+
+</style>
+
+</head>
+
+<body >
+<script src="js/project.js"></script>
+<script src="js/jquery.js"></script>
+
+<!-- HEADER STARTS--> 
+<div class = "container-fluid">
+<div class = "row" style = "margin-bottom:2px;">
+<img src = "images/south africa.png" style = "width:133px; height:60px;">
+<img src = "images/newzealand.png" style = "width:133px; height:60px;">
+<img src = "images/england.png" style = "width:133px; height:60px;">
+<img src = "images/india.jpg" style = "width:133px; height:60px;">
+<h1 style = "font-size:34px; font-style:oblique; margin-left:22px; margin-right:22px; margin-top:5px;"> 
+<a href = "file:///C:/Users/Dell/Desktop/FHCJ/page1.htm" style = " text-decoration:none;">
+<b><span style = "color:purple;">W</span><span style="font-family:Book Antiqua;color:RebeccaPurple;">oRld</span><span style = "color:purple;">C</span><span style="font-family:Book Antiqua;color:RebeccaPurple;">ricInFo</span></a> </h1> 
+</b>
+<img src = "images/westindies.jpg" style = "width:133px; height:60px;">
+<img src = "images/bangladesh.jpg" style = "width:133px; height:60px;">
+<img src = "images/srilanka.jpg" style = "width:133px; height:60px;">
+<img src = "images/australia.png" style = "width:133px; height:60px;">
+
+
+
+<!--HEADER ENDS-->
+
+</div>
+</div>
+<!--NAVBAR STARTS-->
+<div class = "topnav" id = "myTopnav">
+    <a href="page1.htm"><i class="fa fa-home" style="font-size:30px;
+					color:#ffffff;margin-top:-3px;margin-left:8px"></i></a>
+     <a href = "live.htm" id = "score"> Live Scores </a> 
+	 <a href = "page2.htm" target = "_blank"> Rankings </a>
+	 <a href = "schedules.htm" target = "_blank">Schedule </a>
+	 <a href = "page4.htm" target = "_blank">Teams </a>
+	 <div class="dropdown">
+      <button class="dropbtn">Series
+      <i class="fa fa-caret-down"></i>
+    </button>
+    </div>   
+	<a href = "aboutus.htm" style = "float:right;">AboutUs </a>
+	
+	<a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+
+</div>
+
+<script>
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+	
+}
+</script>
+<!--NAVBAR ENDS-->
+ <h3 style = "margin-left:20px; margin-bottom:15px; margin-top:15px;">CRICKET SCHEDULE</h3>
+
+<div class = "matchtype">
+<ul>
+     <li> <a href = "#"> Women </a> </li>
+	<li> <a href = "#"> Domestic & Others </a> </li>
+	<li> <a href = "#"> T-20 Leagues </a> </li>
+	<li> <a href = "#" class = "active"> International</a> </li>
+  
+</ul>
+</div>
+
+<!-- MAIN AREA -->
+<div  class="container-fluid">
+<div class="row">
+
+  <div class = "col-md-2">
+  <!-- LEFT SIDEBAR STARTS-->
+  <!--<div class = "leftsidebar">-->
+    <h4 style = "color:RebeccaPurple;">  
+        <center><b><br> KEY SERIES <br></b></center>
+    </h4>
+   <table class="keyseries">
+    <tr> <th> ICC WCQ </th> </tr>
+    <tr> <th>INDIA Vs ENGLAND </th> </tr>
+    <tr> <th> IPL </th> </tr>
+    <tr> <th> Women's Tri-Series </th> </tr>
+    <tr> <th> AUSTRALIA Vs SOUTH AFRICA </th> </tr>
+    <tr> <th> ICC WWC </th> </tr>
+    <tr> <th> PSL </th> </tr>
+	<tr> <th> BIG BASH </th> </tr>
+   </table>
+   <h4 style = "color:RebeccaPurple;">  
+        <center><b><br> KEY TOURNAMENTS <br></b></center>
+    </h4>
+   <table class="keyseries">
+    <tr> <th> ICC WORLDCUP </th> </tr>
+    <tr> <th> ICC T-20 WORLDCUP </th> </tr>
+    <tr> <th> ICC CHAMPIONS LEAGUE</th> </tr>
+    <tr> <th> ICC WOMEN'S WORLDCUP </th> </tr>
+    <tr> <th> ICC TEST CHAMPIONSHIP</th> </tr>
+    <tr> <th> ICC U-19 WORLDCUP </th> </tr>
+   </table>
+  </div> 
+  <!--LEFT SIDEBAR ENDS-->
+ 
+  
+    <!--MAIN STARTS-->   
+    <div class = "col-md-10">
+	<center><table class = "sch" style = "width:70%; margin-top:40px;">
+	<tr> <th colspan = "2"> Month </th> <th colspan = "6"> Series Name </th> </tr>
+	
+	<tr><td rowspan = "3" colspan = "2" style="color:red;background-color:white;"><b> MAY 2018 <b></td>
+       	<td colspan = "6" class = "tour"> Srilanka Tour of west Indies,2018 </td> </tr> 
+	<tr><td colspan = "6" class = "tour"> Pakistan Tour of Ireland,2018 </td> </tr>
+	<tr><td colspan = "6" class = "tour"> Pakistan Tour of England,2018</td> </tr>
+	
+	<tr> <td rowspan = "5" colspan = "2" style = "color:red; background-color:#F0F0F0;"><b> JUNE 2018 <b></td> <td colspan = "6" class = "tour"> Srilanka Tour of Zimbawe,2018 </td> </tr> 
+	<tr><td colspan = "6" class = "tour"> England Tour of Scotland,2018 </td> </tr>
+	<tr><td colspan = "6" class = "tour"> Afghanistan Tour of India,2018 </td> </tr>
+	<tr><td colspan = "6" class = "tour"> India Tour of Ireland,2018 </td> </tr>
+	<tr><td colspan = "6" class = "tour"> Australia Tour of England,2018 </td> </tr>
+	
+	<tr> <td rowspan = "4" colspan = "2" style = "color:red; background-color:white;"><b> JULY 2018 </b></td> <td colspan = "6" class = "tour"> SouthAfrica Tour of Srilanka,2018 </td> </tr> 
+	<tr><td colspan = "6" class = "tour"> India Tour of England,2018 </td> </tr>
+	<tr><td colspan = "6" class = "tour"> Australia Tour of WestIndies,2018 </td> </tr>
+	
+	</table><center>
+
+    </div>
+	<!--MAIN ENDS-->
+  
+  <!--RIGHT SIDEBAR STARTS-->
+  
+  <!--MAIN AREA ENDS-->
+
+  
+  <!--footer Starts-->
+    
+ <table class = "container-fluid foot">
+  
+ <table class="container-fluid" style="font-family:verdana;color:white">
+ 
+ <tr style="background-color:#22262a"><td colspan="3">
+ <b><h2><span style = "color:white;">W</span><span style="font-family:Book Antiqua;color:white;">oRld</span><span style="color:white;">C</span><span style="font-family:Book Antiqua;color:white;">ricInFo</span></h2> 
+</b></td>
+ <td colspan="1" style="float:right">
+ <i>Follow Us On:</i>
+ <a href="" class="fa fa-facebook" style="color:white;text-decoration:none;font-size:30px;padding:10px"></a>
+ <a href="" class="fa fa-twitter" style="color:white;text-decoration:none;font-size:30px;padding:10px"></a>
+ <a href=""class="fa fa-youtube"style="color:white;text-decoration:none;font-size:30px;padding:10px"></a></td></tr>
+ 
+ </table>
+  <div class="container-fluid end" style="font-family:verdana; background-color:#303030; padding:5px;">
+  <div class="row foo">
+  
+    <div class="col-sm-4">
+	<ul>
+ <h5>About</h5>
+ 
+  <li><a href="aboutus.htm">
+ About Us</a></li>
+ <li><a href="">Faq</a></li>
+ <li><a href="">Contact Us</a></li>
+ </ul>
+ </div>
+ <div class="col-sm-4">
+ <ul>
+ <h5>Mobilesite & Apps </h5>
+
+  <li><a href="">Windows</a></li>
+   <li><a href="">IOS</a></li>
+    <li><a href="">Android</a></li>
+	</ul>
+	</div>
+	
+	<div class="col-sm-4">
+	<ul>
+ <h5>Company</h5>
+ 
+
+ <li><a href="">Careers</a></li>
+ <li><a href="">Advertise</a></li>
+ <li><a href="">Privacy Policy</a></li>
+ </ul>
+ </div>
+ </div>
+ </div>
+ </table>
+ 
+</body>
+</html>

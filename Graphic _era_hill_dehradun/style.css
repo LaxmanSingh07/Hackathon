@@ -1,0 +1,102 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.8;
+    /* background-attachment: scroll; */
+    background-image: url("https://www.gehu.ac.in/content/dam/gehu/Image-Galleries/HeaderFiles/gehu-aerial-view.jpg");
+    
+    color: white;
+    height: 100vh;
+    width: 100vw;
+}
+
+body::before{
+      background-size: 100% 100%;
+      filter: blur(8px);
+      -webkit-filter: blur(8px);
+
+  }
+  .Sports {
+    height: 100%;
+    width: 100%;
+    padding: 50px;
+  }
+  
+  .title {
+    text-align: center;
+    font-size: 60px;
+    font-weight: 300;
+    margin-bottom: 50px;
+  }
+  
+  .content {
+    max-width: 100rem;
+    margin: 0 auto;
+  }
+  
+  .slider {
+    max-width: 60rem;
+    margin: 0 auto;
+    text-align: center;
+    padding: 2vh 1vw;
+  }
+  
+  .slide {
+    display: none;
+  }
+  
+  .slide h3 {
+    font-size: 30px;
+    font-weight: bold;
+  }
+  
+  .slide-para {
+    font-size: 25px;
+    font-weight: 100;
+  }
+  
+  .slide.active {
+    display: block;
+    animation: slide 1s linear;
+  }
+  
+  @keyframes slide {
+    0% {
+      transform: translateX(-2rem);
+      opacity: 0;
+    }
+  
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  .indicator {
+    padding-top: 4vh;
+    padding-bottom: 4vh;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .indicator img {
+    height: calc(7rem + 6vw);
+    width: calc(7rem + 6vw);
+    object-fit: cover;
+    border-radius: 50%;
+    margin: 2vh 2vw;
+    opacity: 0.2;
+    border: 0.2rem solid rgb(220, 46, 39);
+    cursor: pointer;
+    transition: opacity 1s ease;
+  }
+  
+  .indicator img.active {
+    opacity: 1;
+  }
+  
